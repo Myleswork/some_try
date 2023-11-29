@@ -1,0 +1,221 @@
+#定义超参数
+IMG_SIZE = 224 # resnet50的输入是224的所以需要将图片统一大小
+BATCH_SIZE= 16 #这个批次大小需要占用4.6-5g的显存，如果不够的化可以改下批次，如果内存超过10G可以改为512
+IMG_MEAN = [0.485, 0.456, 0.406]
+IMG_STD = [0.229, 0.224, 0.225]
+CUDA=torch.cuda.is_available()
+DEVICE = torch.device("cuda" if CUDA else "cpu")
+#print(DEVICE)
+
+train Epoch:0	 Loss:2.278992
+CPU times: user 8min 57s, sys: 1.32 s, total: 8min 58s
+Wall time: 53.5 s
+
+Test set: Average loss: 0.0668, Accuracy: 703/1023 (69%)
+
+train Epoch:1	 Loss:2.491451
+CPU times: user 8min 46s, sys: 857 ms, total: 8min 47s
+Wall time: 50.8 s
+
+Test set: Average loss: 0.0587, Accuracy: 747/1023 (73%)
+
+train Epoch:2	 Loss:1.571992
+CPU times: user 8min 47s, sys: 702 ms, total: 8min 48s
+Wall time: 50.8 s
+
+Test set: Average loss: 0.0522, Accuracy: 775/1023 (76%)
+
+train Epoch:3	 Loss:2.316209
+CPU times: user 8min 48s, sys: 676 ms, total: 8min 49s
+Wall time: 51 s
+
+Test set: Average loss: 0.0519, Accuracy: 778/1023 (76%)
+
+train Epoch:4	 Loss:1.995762
+CPU times: user 8min 51s, sys: 655 ms, total: 8min 52s
+Wall time: 51.3 s
+
+Test set: Average loss: 0.0495, Accuracy: 784/1023 (77%)
+
+train Epoch:5	 Loss:2.140293
+CPU times: user 8min 45s, sys: 605 ms, total: 8min 46s
+Wall time: 50.6 s
+
+Test set: Average loss: 0.0465, Accuracy: 780/1023 (76%)
+
+train Epoch:6	 Loss:2.783068
+CPU times: user 9min 4s, sys: 810 ms, total: 9min 5s
+Wall time: 53.7 s
+
+Test set: Average loss: 0.0484, Accuracy: 797/1023 (78%)
+
+train Epoch:7	 Loss:1.766801
+CPU times: user 8min 54s, sys: 726 ms, total: 8min 55s
+Wall time: 52.1 s
+
+Test set: Average loss: 0.0525, Accuracy: 784/1023 (77%)
+
+train Epoch:8	 Loss:3.332281
+CPU times: user 8min 41s, sys: 673 ms, total: 8min 42s
+Wall time: 50.7 s
+
+Test set: Average loss: 0.0484, Accuracy: 795/1023 (78%)
+
+train Epoch:9	 Loss:1.479800
+CPU times: user 8min 46s, sys: 938 ms, total: 8min 47s
+Wall time: 52 s
+
+Test set: Average loss: 0.0552, Accuracy: 771/1023 (75%)
+
+
+
+#定义超参数
+IMG_SIZE = 224 # resnet50的输入是224的所以需要将图片统一大小
+BATCH_SIZE= 256 #这个批次大小需要占用4.6-5g的显存，如果不够的化可以改下批次，如果内存超过10G可以改为512
+IMG_MEAN = [0.485, 0.456, 0.406]
+IMG_STD = [0.229, 0.224, 0.225]
+CUDA=torch.cuda.is_available()
+DEVICE = torch.device("cuda" if CUDA else "cpu")
+#print(DEVICE)
+
+
+train Epoch:0	 Loss:2.712568
+CPU times: user 8min 36s, sys: 5.79 s, total: 8min 42s
+Wall time: 48 s
+
+Test set: Average loss: 0.0079, Accuracy: 704/1023 (69%)
+
+train Epoch:1	 Loss:1.837701
+CPU times: user 8min 31s, sys: 4.14 s, total: 8min 35s
+Wall time: 46.6 s
+
+Test set: Average loss: 0.0046, Accuracy: 781/1023 (76%)
+
+train Epoch:2	 Loss:1.717768
+CPU times: user 8min 28s, sys: 3.64 s, total: 8min 32s
+Wall time: 46.3 s
+
+Test set: Average loss: 0.0036, Accuracy: 790/1023 (77%)
+
+train Epoch:3	 Loss:1.578127
+CPU times: user 8min 25s, sys: 3.85 s, total: 8min 29s
+Wall time: 45.9 s
+
+Test set: Average loss: 0.0031, Accuracy: 818/1023 (80%)
+
+train Epoch:4	 Loss:1.567441
+CPU times: user 8min 27s, sys: 3.61 s, total: 8min 31s
+Wall time: 46.2 s
+
+Test set: Average loss: 0.0030, Accuracy: 813/1023 (79%)
+
+train Epoch:5	 Loss:1.427709
+CPU times: user 8min 28s, sys: 3.85 s, total: 8min 32s
+Wall time: 46.3 s
+
+Test set: Average loss: 0.0028, Accuracy: 832/1023 (81%)
+
+train Epoch:6	 Loss:1.450195
+CPU times: user 8min 31s, sys: 3.74 s, total: 8min 34s
+Wall time: 46.6 s
+
+Test set: Average loss: 0.0027, Accuracy: 813/1023 (79%)
+
+train Epoch:7	 Loss:1.438895
+CPU times: user 8min 35s, sys: 4.11 s, total: 8min 39s
+Wall time: 47.7 s
+
+Test set: Average loss: 0.0027, Accuracy: 820/1023 (80%)
+
+train Epoch:8	 Loss:1.350268
+CPU times: user 8min 39s, sys: 4.75 s, total: 8min 44s
+Wall time: 48.2 s
+
+Test set: Average loss: 0.0026, Accuracy: 832/1023 (81%)
+
+train Epoch:9	 Loss:1.166814
+CPU times: user 8min 40s, sys: 4.56 s, total: 8min 44s
+Wall time: 48.2 s
+
+Test set: Average loss: 0.0025, Accuracy: 828/1023 (81%)
+
+
+#分割validation set
+dataset_names = ['train', 'valid']
+stratified_split = StratifiedShuffleSplit(n_splits=1, test_size=0.1, random_state=0)  #分割10%作为val set
+train_split_idx, val_split_idx = next(iter(stratified_split.split(all_labels_df.id, all_labels_df.breed)))
+train_df = all_labels_df.iloc[train_split_idx].reset_index()
+val_df = all_labels_df.iloc[val_split_idx].reset_index()
+print(len(train_df))
+print(len(val_df))
+
+
+#定义超参数
+IMG_SIZE = 224 # resnet50的输入是224的所以需要将图片统一大小
+BATCH_SIZE= 512 #这个批次大小需要占用4.6-5g的显存，如果不够的化可以改下批次，如果内存超过10G可以改为512
+IMG_MEAN = [0.485, 0.456, 0.406]
+IMG_STD = [0.229, 0.224, 0.225]
+CUDA=torch.cuda.is_available()
+DEVICE = torch.device("cuda" if CUDA else "cpu")
+#print(DEVICE)
+
+
+train Epoch:0	 Loss:1.255087
+CPU times: user 8min 42s, sys: 4.57 s, total: 8min 47s
+Wall time: 48.5 s
+
+Test set: Average loss: 0.0024, Accuracy: 839/1023 (82%)
+
+train Epoch:1	 Loss:1.268199
+CPU times: user 8min 29s, sys: 4.1 s, total: 8min 33s
+Wall time: 46.5 s
+
+Test set: Average loss: 0.0025, Accuracy: 814/1023 (80%)
+
+train Epoch:2	 Loss:1.584425
+CPU times: user 8min 51s, sys: 5.51 s, total: 8min 57s
+Wall time: 49.6 s
+
+Test set: Average loss: 0.0025, Accuracy: 834/1023 (82%)
+
+train Epoch:3	 Loss:1.192478
+CPU times: user 8min 38s, sys: 4.28 s, total: 8min 43s
+Wall time: 47.6 s
+
+Test set: Average loss: 0.0025, Accuracy: 826/1023 (81%)
+
+train Epoch:4	 Loss:1.249423
+CPU times: user 8min 45s, sys: 4.77 s, total: 8min 50s
+Wall time: 48.5 s
+
+Test set: Average loss: 0.0024, Accuracy: 837/1023 (82%)
+
+train Epoch:5	 Loss:1.174283
+CPU times: user 8min 45s, sys: 4.61 s, total: 8min 50s
+Wall time: 48.3 s
+
+Test set: Average loss: 0.0024, Accuracy: 824/1023 (81%)
+
+train Epoch:6	 Loss:1.066935
+CPU times: user 8min 42s, sys: 4.19 s, total: 8min 46s
+Wall time: 47.7 s
+
+Test set: Average loss: 0.0024, Accuracy: 831/1023 (81%)
+
+train Epoch:7	 Loss:1.287173
+CPU times: user 8min 42s, sys: 4.2 s, total: 8min 47s
+Wall time: 48 s
+
+Test set: Average loss: 0.0024, Accuracy: 830/1023 (81%)
+
+train Epoch:8	 Loss:1.313889
+CPU times: user 8min 47s, sys: 5.25 s, total: 8min 53s
+Wall time: 48.8 s
+
+Test set: Average loss: 0.0023, Accuracy: 836/1023 (82%)
+
+train Epoch:9	 Loss:1.237827
+CPU times: user 8min 48s, sys: 4.92 s, total: 8min 53s
+Wall time: 49 s
+
+
